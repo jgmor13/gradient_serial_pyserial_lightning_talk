@@ -39,8 +39,4 @@ try:
 except KeyboardInterrupt:
     print("Program terminated by user.")
 finally:
-    ser.close()            
-            
-
-        
-        
+    ser.close()
