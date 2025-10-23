@@ -23,9 +23,12 @@
 #include <Adafruit_GFX.h>
 #include "Adafruit_LEDBackpack.h"
 
+
 int ledPin = 13;
 
+
 Adafruit_8x8matrix matrix = Adafruit_8x8matrix();
+
 
 void setup() {
   Serial.begin(9600);
@@ -35,6 +38,7 @@ void setup() {
 
   pinMode(ledPin, OUTPUT);
 }
+
 
 static const uint8_t PROGMEM
   smile_bmp[] =
@@ -65,6 +69,7 @@ static const uint8_t PROGMEM
     B00100001,
     B00011110 };
 
+
 void loop() {
 
   if (Serial.available()){
@@ -86,26 +91,31 @@ void loop() {
     
   
   }
+  
   //matrix.clear();
   //matrix.drawBitmap(0, 0, neutral_bmp, 8, 8, LED_ON);
   //matrix.writeDisplay();
   //delay(500);
 
+  
   //matrix.clear();
   //matrix.drawBitmap(0, 0, frown_bmp, 8, 8, LED_ON);
   //matrix.writeDisplay();
   //delay(500);
 
+  
   //matrix.clear();      // clear display
   //matrix.drawPixel(0, 0, LED_ON);  
   //matrix.writeDisplay();  // write the changes we just made to the display
   //delay(500);
 
+  
   //matrix.clear();
   //matrix.drawLine(0,0, 7,7, LED_ON);
   //matrix.writeDisplay();  // write the changes we just made to the display
   //delay(500);
 
+  
   //matrix.clear();
   //matrix.drawRect(0,0, 8,8, LED_ON);
   //matrix.fillRect(2,2, 4,4, LED_ON);
