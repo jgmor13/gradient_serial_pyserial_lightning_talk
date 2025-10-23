@@ -1,22 +1,22 @@
-**Introduction and Background**
+## **Introduction and Background**
 pySerial is a Python library that provides a simple and efficient way to access serial ports, enabling communication with hardware devices such as microcontrollers. This makes it particularly helpful for bridging Python code with the physical world, allowing developers to interact with embedded systems without needing to switch to lower-level languages like C for basic operations.
 
-**Why PySerial is Helpful**
+## **Why PySerial is Helpful**
 It facilitates communication with microcontrollers and other serial devices, enabling tasks like reading sensor data or controlling actuators directly from Python scripts.
 This eliminates the need for language conversions when prototyping or automating hardware interactions, speeding up development in projects involving the Internet of Things (IoT), robotics, or custom electronics.
 
-**History**
+## **History**
 pySerial was originally created by Chris Liechti in 2001 as a Python extension for serial port access across multiple platforms. The project has evolved over the years, with releases like version 3.4 available as of 2020.
 
-**License**
+## **License**
 pySerial is released under the BSD-3-Clause license, which allows for free use, modification, and distribution with minimal restrictions. It is maintained under an open source license on GitHub.
 
-**Industries Supported**
+## **Industries Supported**
 - Manufacturing
 - Industry Automotive
 - Robotics
 
-**Installation / Implementation**
+## **Installation / Implementation**
 ```bash
 pip install pyserial
 ```
@@ -24,7 +24,7 @@ pip install pyserial
 import serial
 ```
 
-Key functionality:
+## **Key functionality:**
 
 open/close
 ```python
