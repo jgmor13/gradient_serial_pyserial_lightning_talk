@@ -17,17 +17,17 @@ pySerial is released under the BSD-3-Clause license, which allows for free use, 
 - Robotics
 
 **Installation / Implementation**
-'''bash
+```bash
 pip install pyserial
-'''
-'''python
+```
+```python
 import serial
-'''
+```
 
 Key functionality:
 
 open/close
-'''python
+```python
 __init__( port = 'COMX', baudrate = 9600, bytesize= EIGHTBITS,
 parity = PARITY_NONE, stopbits = STOPBITS_ONE, timeout = NONE)
 
@@ -36,26 +36,26 @@ open() # Opens the serial port
 is_open() # Returns True if port is open / False if port is closed
 
 close() # Closes the serial port
-'''
+```
 
 Read Lines
-'''python 
+```python 
 read(size = 1) #Reads up to *size* byte
 
 readline(size = 1) #Read and return one line in bytes
 
 read_until(expected=b'\n' , size = None) #Reads serial in until expected 
-'''
+```
 
 Write Lines
-'''python
+```python
 write(data) #write bytes to port
 
 write_timeout() #Read or set the max amount of time a program will wait before timeout
-'''
+```
 
 Port
-'''python
+```python
 get_settings() #Returns a dictionary of port settings
 
 name() #Returns device name
@@ -63,10 +63,10 @@ name() #Returns device name
 baudrate() #Returns device baudrate
 
 bytesize() #Returns byte size setting as an int
-'''
+```
 
 Buffer Management
-'''python
+```python
 flush() #Clears buffer of file
 
 reset_input_buffer() # Flush the input buffer
@@ -76,4 +76,4 @@ reset_ouptut_buffer() # Flush the output buffer
 in_waiting() # Returns bytes in receive buffer
 
 out_waiting() # Returns bytes in output buffer
-'''
+```
